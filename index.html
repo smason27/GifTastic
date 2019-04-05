@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href = "assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href = "assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
 </head>
 
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Start Watching GIFs</h1>  
+            <h1 class="display-4">Start Watching GIFs</h1>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="searchByRating">Search By Rating</label>
+                        <select class="form-control" id="searchRating">
+                            <option>g</option>
+                            <option>pg</option>
+                            <option>pg-13</option>
+                        </select>
+                    </div>
+                </form>
                 <div id="generatedButton"></div>
             </div>
             <div class="col-md-6">
                 <form>
                     <div class="form-group">
-                      <label for="add GIFs">add a gif</label>
-                      <input type="text" class="form-control" id="gifInput" placeholder="GIF">
+                        <label for="add GIFs">Add GIFs</label>
+                        <input type="text" class="form-control" id="gifInput" placeholder="GIF">
                     </div>
                     <button type="submit" id="addGif" class="btn btn-primary">Search GIFs</button>
-                  </form>
+                </form>
             </div>
-        </div>        
+        </div>
     </div>
 
     <div id="wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" id="gifs">
-                </div>
-            </div>
-        </div>
-    </div>
-   
-    <!-- <div>
-        <img src="https://giphy.com/embed/SggILpMXO7Xt6" height="42" width="42">
-    </div> -->
+                <div class="col-md-6" id="leftGifs"></div>
+                <div class="col-md-6" id="rightGifs">
+                    <d/div> </div> </div> </div> <!-- <div>
+                        <img src="https://giphy.com/embed/SggILpMXO7Xt6" height="42" width="42">
+                </div> -->
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="assets/javascript/app.js"></script>
+                <script src="https://code.jquery.com/jquery.js"></script>
+                <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
